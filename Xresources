@@ -1,0 +1,35 @@
+! Remove scrollbar
+URxvt.scrollBar: false
+
+! Font
+URxvt.font: xft:Termsyn:size=16
+
+! Colors
+URxvt*background: #121212
+URxvt*foreground: #DDDDDD
+URxvt.cursorColor: #FDA53C
+
+! Black
+*color0: #222222
+*color8: #666666
+! Red
+*color1: #E84F4F
+*color9: #D23D3D
+! Green
+*color2: #B7CE42
+*color10: #BDE077
+! Yellow
+*color3: #FEA63C
+*color11: #FFE863
+! Blue
+*color4: #66AABB
+*color12: #AACCBB
+! Magenta
+*color5: #B7416E
+*color13: #E16A98
+! Cyan
+*color6: #6D878D
+*color14: #42717B
+! White
+*color7: #DDDDDD
+*color15: #CCCCCC
