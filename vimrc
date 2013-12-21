@@ -17,6 +17,9 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 
+" Sane backspace behaviour
+set backspace=2
+
 " Linewrapping
 set textwidth=79
 set formatoptions+=t
