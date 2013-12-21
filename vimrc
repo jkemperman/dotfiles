@@ -11,6 +11,14 @@ match OverLength /\%79v.\+/
 set list
 set listchars=tab:»\ ,trail:·
 
+" gVim pimpin'
+if has('gui_running')
+	" Remove gVim widgets
+	set guioptions-=m
+	set guioptions-=T
+	set guioptions-=r
+end
+
 " Tabs and indenting
 set tabstop=4
 set shiftwidth=4
