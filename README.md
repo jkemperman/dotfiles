@@ -13,5 +13,5 @@ The following scripting langauges are used.
 
 ### Fonts
 You will need the following fonts installed on your system.
-* Tamsyn
+* Inconsolata
 	* Xresources
