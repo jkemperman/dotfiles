@@ -1,3 +1,6 @@
+# Run on startup
+exec --no-startup-id sh ~/.fehbg --bg-fill
+
 # Set alt as primary modifier and Mod4 als secondary modifier
 set $mod Mod1
 set $mod_alt Mod4
