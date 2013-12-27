@@ -5,9 +5,6 @@ exec --no-startup-id sh ~/.fehbg --bg-fill
 set $mod Mod1
 set $mod_alt Mod4
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
-
 # Start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
