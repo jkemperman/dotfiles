@@ -15,19 +15,19 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec dmenu_run
 
 # Change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # Move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # Split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+b split h
 
 # Split in vertical orientation
 bindsym $mod+v split v
@@ -69,10 +69,10 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # Change size of focused window
-bindsym $mod_alt+j resize shrink width 3 px or 3 ppt
-bindsym $mod_alt+semicolon resize grow width 3 px or 3 ppt
-bindsym $mod_alt+k resize shrink height 3 px or 3 ppt
-bindsym $mod_alt+l resize grow height 3 px or 3 ppt
+bindsym $mod_alt+h resize shrink width 3 px or 3 ppt
+bindsym $mod_alt+l resize grow width 3 px or 3 ppt
+bindsym $mod_alt+j resize shrink height 3 px or 3 ppt
+bindsym $mod_alt+k resize grow height 3 px or 3 ppt
 
 # Reload the configuration file
 bindsym $mod+Shift+c reload
