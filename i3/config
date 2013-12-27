@@ -68,6 +68,12 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# Change size of focused window
+bindsym $mod_alt+j resize shrink width 3 px or 3 ppt
+bindsym $mod_alt+semicolon resize grow width 3 px or 3 ppt
+bindsym $mod_alt+k resize shrink height 3 px or 3 ppt
+bindsym $mod_alt+l resize grow height 3 px or 3 ppt
+
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
