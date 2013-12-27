@@ -85,9 +85,26 @@ bindsym $mod+Shift+e exec i3-msg exit
 # Remove title bar and set bordersize to 2 pixels
 new_window pixel 2
 
+# Colors
+# Class                  border  backgr  text
+client.focused           #889988 #889988 #dddddd
+client.unfocused         #343434 #343434 #dddddd
+client.focused_inactive  #455545 #455545 #dddddd
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	colors {
+		statusline #ffffff
+		background #181818
+
+		# Class             border  backgr  text
+		focused_workspace   #181818 #181818 #889988
+		active_workspace    #181818 #181818 #455545
+		inactive_workspace  #181818 #181818 #454545
+		urgent_workspace    #181818 #181818 #454545
+	}
+
 	position top
 	status_command $HOME/bin/conky-i3bar.sh
 }
