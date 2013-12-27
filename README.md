@@ -4,14 +4,13 @@ This repository contains dotfiles for the following applications.
 * Vim
 * Zsh
 * Urxvt
+* i3
+* conky
 
 ## Dependencies
-### Scripts
-The following scripting langauges are used.
+The following packages must be installed.
 * Bash
-	* make.sh
 
 ### Fonts
 You will need the following fonts installed on your system.
 * Inconsolata
-	* Xresources

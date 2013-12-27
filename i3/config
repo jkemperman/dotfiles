@@ -83,5 +83,5 @@ new_window pixel 2
 # finds out, if available)
 bar {
 	position top
-	status_command i3status
+	status_command $HOME/bin/conky-i3bar.sh
 }
