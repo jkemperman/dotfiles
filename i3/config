@@ -75,6 +75,10 @@ bindsym $mod+Shift+r restart
 # Exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec i3-msg exit
 
+## Look and feel
+# Remove title bar and set bordersize to 2 pixels
+new_window pixel 2
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
