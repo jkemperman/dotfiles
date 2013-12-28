@@ -13,6 +13,12 @@ set listchars=tab:»\ ,trail:·
 
 " gVim pimpin'
 if has('gui_running')
+	" Ignore mouse select
+	set mouse-=a
+
+	" Make the font a bit nicer
+	set guifont=consolas:h13
+
 	" Remove gVim widgets
 	set guioptions-=m
 	set guioptions-=T
