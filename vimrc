@@ -25,6 +25,10 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 
+" Make search case insensitive if search pattern is all lowercase
+set ignorecase
+set smartcase
+
 " Sane backspace behaviour
 set backspace=2
 
@@ -36,7 +40,7 @@ set formatoptions+=t
 filetype plugin indent on
 
 " Custom keybindings
-" Avoid the extra keypress when going to command mode.
+" Avoid the extra keypress when going to command mode
 map ; :
 
 " Pathogen
