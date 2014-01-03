@@ -85,6 +85,9 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec i3-msg exit
 
 ## Look and feel
+# Change font for i3bar
+font pango:Tamsyn 12
+
 # Remove title bar and set bordersize to 2 pixels
 new_window pixel 2
 
