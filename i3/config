@@ -104,10 +104,10 @@ bar
 		background #181818
 
 		# Class             border  backgr  text
-		focused_workspace   #181818 #181818 #889988
-		active_workspace    #181818 #181818 #455545
-		inactive_workspace  #181818 #181818 #454545
-		urgent_workspace    #181818 #181818 #454545
+		focused_workspace   #181818 #181818 #aabbaa
+		active_workspace    #181818 #181818 #889988
+		inactive_workspace  #181818 #181818 #888888
+		urgent_workspace    #181818 #181818 #888888
 	}
 
 	position top
