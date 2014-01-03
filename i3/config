@@ -11,6 +11,9 @@ focus_follows_mouse no
 # Start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# Lock the screen
+bindsym $mod_alt+Shift+l exec --no-startup-id i3lock -c 000000
+
 # Kill focused window
 bindsym $mod+Shift+q kill
 
