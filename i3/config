@@ -9,7 +9,7 @@ set $mod_alt Mod4
 focus_follows_mouse no
 
 # Start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # Lock the screen
 bindsym $mod_alt+Shift+l exec --no-startup-id i3lock -c 000000
@@ -18,7 +18,7 @@ bindsym $mod_alt+Shift+l exec --no-startup-id i3lock -c 000000
 bindsym $mod+Shift+q kill
 
 # Start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run
 
 # Change focus
 bindsym $mod+h focus left
