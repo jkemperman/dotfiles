@@ -11,6 +11,7 @@ This repository contains dotfiles for the following applications.
 The following packages must be installed.
 * Bash
 * i3lock
+* dmenu
 
 ### Fonts
 You will need the following fonts installed on your system.
