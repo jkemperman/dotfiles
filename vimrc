@@ -49,5 +49,11 @@ filetype plugin indent on
 " Avoid the extra keypress when going to command mode
 map ; :
 
+" Easier indenting
+vnoremap < <gv
+vnoremap > >gv
+nnoremap < <<
+nnoremap > >>
+
 " Pathogen
 execute pathogen#infect()
