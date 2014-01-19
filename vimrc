@@ -55,5 +55,9 @@ vnoremap > >gv
 nnoremap < <<
 nnoremap > >>
 
+" Remap common typos
+cnoremap Q q
+cnoremap W w
+
 " Pathogen
 execute pathogen#infect()
