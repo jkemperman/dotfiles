@@ -7,9 +7,8 @@ ZSH=$HOME/dotfiles/oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="sporty_256"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Aliases
+alias vi=vim
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
