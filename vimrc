@@ -55,6 +55,16 @@ vnoremap > >gv
 nnoremap < <<
 nnoremap > >>
 
+" Force the use of hjkl instead of arrow keys
+inoremap <Up>    <NOP>
+inoremap <Down>  <NOP>
+inoremap <Left>  <NOP>
+inoremap <Right> <NOP>
+noremap  <Up>    <NOP>
+noremap  <Down>  <NOP>
+noremap  <Left>  <NOP>
+noremap  <Right> <NOP>
+
 " Remap common typos
 cnoremap Q q
 cnoremap W w
