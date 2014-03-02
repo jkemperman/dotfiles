@@ -12,6 +12,7 @@ The following packages must be installed.
 * Bash
 * i3lock
 * dmenu
+* scrot
 
 ### Fonts
 You will need the following fonts installed on your system.

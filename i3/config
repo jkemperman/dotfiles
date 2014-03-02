@@ -14,6 +14,9 @@ bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 # Lock the screen
 bindsym $mod_alt+Shift+l exec --no-startup-id i3lock -c 000000
 
+# Take a screenshot
+bindsym Print exec scrot -e 'mv $f ~/images/screenshots/'
+
 # Kill focused window
 bindsym $mod+q kill
 
