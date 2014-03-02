@@ -2,7 +2,7 @@
 URxvt.scrollBar: false
 
 ! Font
-URxvt.font: xft:Inconsolata:size=12
+URxvt.font: xft:Termsyn:size=14
 
 ! Colors
 URxvt*background: #121212
