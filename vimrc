@@ -1,3 +1,4 @@
+" Enable vim awesomeness
 set nocompatible
 
 " Look and feel
