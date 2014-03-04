@@ -10,6 +10,7 @@ ZSH_THEME="sporty_256"
 # Aliases
 alias vi=vim
 alias top=htop
+alias feh="feh -. -B black"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
