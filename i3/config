@@ -21,7 +21,7 @@ bindsym Print exec scrot -e 'mv $f ~/images/screenshots/'
 bindsym $mod+q kill
 
 # Start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run -b -i -f -nb \#181818 -nf \#888888 -sb \#334333 -sf \#aabbaa
 
 # Change focus
 bindsym $mod+h focus left
