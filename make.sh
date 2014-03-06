@@ -8,7 +8,7 @@
 # Declare variables
 dir=~/dotfiles
 olddir=~/dotfiles_old
-files="vimrc vim Xresources zshrc i3 vimperatorrc bin conkyrc"
+files="vimrc vim Xresources zshrc i3 vimperatorrc bin conkyrc zprofile"
 
 # Create dotfiles_old in home directory
 echo "Creating $olddir for backup of any existing dotfiles in ~..."
