@@ -26,6 +26,18 @@ if has('gui_running')
 	set guioptions-=r
 end
 
+" Highlight search terms
+set hlsearch
+set incsearch
+
+" Increase history
+set history=1024
+set undolevels=1024
+
+" Disable swap/backup files
+set nobackup
+set noswapfile
+
 " Tabs and indenting
 set tabstop=4
 set shiftwidth=4
@@ -49,6 +61,12 @@ filetype plugin indent on
 " Custom keybindings
 " Avoid the extra keypress when going to command mode
 map ; :
+
+" Easier window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " Easier indenting
 vnoremap < <gv
