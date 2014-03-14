@@ -11,6 +11,7 @@ ZSH_THEME="sporty_256"
 alias vi=vim
 alias top=htop
 alias feh="feh -. -B black"
+alias emacs="emacs -nw"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
