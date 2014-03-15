@@ -92,5 +92,8 @@ cnoremap W w
 " Remove trailing whitespace
 nnoremap <Leader>w :%s/\s\+$//<CR>
 
+" Open nerdtree
+nnoremap <Leader>f :NERDTree<CR>
+
 " Pathogen
 execute pathogen#infect()
