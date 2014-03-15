@@ -88,5 +88,9 @@ noremap  <Right> <NOP>
 cnoremap Q q
 cnoremap W w
 
+" Custom macros
+" Remove trailing whitespace
+nnoremap <Leader>w :%s/\s\+$//<CR>
+
 " Pathogen
 execute pathogen#infect()
