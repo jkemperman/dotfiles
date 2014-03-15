@@ -85,6 +85,9 @@ noremap  <Left>  <NOP>
 noremap  <Right> <NOP>
 
 " Custom macros
+" Set mapleader to comma
+let mapleader=","
+
 " Remove trailing whitespace
 nnoremap <Leader>w :%s/\s\+$//<CR>
 
