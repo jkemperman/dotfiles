@@ -84,10 +84,6 @@ noremap  <Down>  <NOP>
 noremap  <Left>  <NOP>
 noremap  <Right> <NOP>
 
-" Remap common typos
-cnoremap Q q
-cnoremap W w
-
 " Custom macros
 " Remove trailing whitespace
 nnoremap <Leader>w :%s/\s\+$//<CR>
