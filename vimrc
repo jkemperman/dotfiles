@@ -4,7 +4,7 @@ set nocompatible
 " Look and feel
 syntax on
 colorscheme molokai
-set number
+set relativenumber
 set ruler
 set cursorline
 highlight OverLength ctermbg=52 ctermfg=252
