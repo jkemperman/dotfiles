@@ -100,6 +100,10 @@ let mapleader=","
 " Remove trailing whitespace
 nnoremap <Leader>w :%s/\s\+$//<CR>
 
+" Easier copy/pasting to/from clipboard
+vnoremap <Leader>y "+y
+nnoremap <Leader>p "+p
+
 " Open nerdtree
 nnoremap <Leader>f :NERDTree<CR>
 
