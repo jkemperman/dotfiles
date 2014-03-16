@@ -1,5 +1,6 @@
 # Run on startup
 exec --no-startup-id sh ~/.fehbg --bg-fill
+exec --no-startup-id compton --opengl --vsync opengl-swc --paint-on-overlay -b
 
 # Set alt as primary modifier and Mod4 als secondary modifier
 set $mod Mod1
