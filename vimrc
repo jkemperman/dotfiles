@@ -29,6 +29,9 @@ if has('gui_running')
 	set guioptions-=r
 end
 
+" Airline pimpin'
+let g:airline_theme="badwolf"
+
 " Highlight search terms
 set hlsearch
 set incsearch
