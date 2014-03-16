@@ -32,6 +32,9 @@ end
 " Airline pimpin'
 let g:airline_theme="badwolf"
 
+" Eliminate delays on ESC.
+set ttimeoutlen=10
+
 " Highlight search terms
 set hlsearch
 set incsearch
