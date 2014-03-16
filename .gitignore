@@ -1,2 +1,7 @@
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*.orig
 *.netrwhist
 *.swp

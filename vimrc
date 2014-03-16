@@ -12,6 +12,9 @@ match OverLength /\%79v.\+/
 set list
 set listchars=tab:»\ ,trail:·
 
+" Always show statusbar.
+set laststatus=2
+
 " gVim pimpin'
 if has('gui_running')
 	" Ignore mouse select
@@ -25,6 +28,12 @@ if has('gui_running')
 	set guioptions-=T
 	set guioptions-=r
 end
+
+" Airline pimpin'
+let g:airline_theme="badwolf"
+
+" Eliminate delays on ESC.
+set ttimeoutlen=10
 
 " Highlight search terms
 set hlsearch
