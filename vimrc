@@ -29,6 +29,9 @@ if has('gui_running')
 	set guioptions-=r
 end
 
+" Eliminate delays on ESC.
+set ttimeoutlen=10
+
 " Highlight search terms
 set hlsearch
 set incsearch
