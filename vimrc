@@ -12,6 +12,9 @@ match OverLength /\%79v.\+/
 set list
 set listchars=tab:»\ ,trail:·
 
+" Always show statusbar.
+set laststatus=2
+
 " gVim pimpin'
 if has('gui_running')
 	" Ignore mouse select
