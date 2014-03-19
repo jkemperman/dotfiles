@@ -27,6 +27,7 @@ if has('gui_running')
 	set guioptions-=m
 	set guioptions-=T
 	set guioptions-=r
+	set guioptions-=L " Right scroll bar
 end
 
 " Airline pimpin'
