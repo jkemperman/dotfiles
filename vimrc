@@ -1,18 +1,28 @@
 " Enable vim awesomeness
 set nocompatible
 
-" Look and feel
+" Enable molokai colorscheme
 syntax on
 colorscheme molokai
+
+" Relative line numbering
 set relativenumber
+
+" Show column/line number information on the status bar
 set ruler
+
+" Highlight current line
 set cursorline
-highlight OverLength ctermbg=52 ctermfg=252
-match OverLength /\%79v.\+/
+
+" Make whitespace visible
 set list
 set listchars=tab:»\ ,trail:·
 
-" Always show statusbar.
+" Highlight characters past 79 columns
+highlight OverLength ctermbg=52 ctermfg=252
+match OverLength /\%79v.\+/
+
+" Always show statusbar
 set laststatus=2
 
 " gVim pimpin'
@@ -24,9 +34,9 @@ if has('gui_running')
 	set guifont=consolas:h13
 
 	" Remove gVim widgets
-	set guioptions-=m
-	set guioptions-=T
-	set guioptions-=r
+	set guioptions-=m " Menu bar
+	set guioptions-=T " Toolbar
+	set guioptions-=r " Left scroll bar
 	set guioptions-=L " Right scroll bar
 end
 
@@ -41,7 +51,7 @@ let g:airline_branch_prefix=""
 let g:airline_readonly_symbol=""
 let g:airline_linecolumn_prefix=""
 
-" Eliminate delays on ESC.
+" Eliminate delays on ESC
 set ttimeoutlen=10
 
 " Highlight search terms
@@ -118,3 +128,4 @@ nnoremap <Leader>f :NERDTree<CR>
 
 " Pathogen
 execute pathogen#infect()
+
