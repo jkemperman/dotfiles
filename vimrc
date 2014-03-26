@@ -117,7 +117,7 @@ noremap  <Right> <NOP>
 let mapleader="\<Space>"
 
 " Remove trailing whitespace
-nnoremap <Leader>w :%s/\s\+$//<CR>
+nnoremap <Leader>k :%s/\s\+$//<CR>
 
 " Easier copy/pasting to/from clipboard
 vnoremap <Leader>y "+y
