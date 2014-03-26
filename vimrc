@@ -114,7 +114,7 @@ noremap  <Right> <NOP>
 
 " Custom macros
 " Set mapleader to comma
-let mapleader="\<Space>"
+let mapleader=","
 
 
 " Remove trailing whitespace
