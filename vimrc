@@ -116,12 +116,23 @@ noremap  <Right> <NOP>
 " Set mapleader to comma
 let mapleader="\<Space>"
 
+
 " Remove trailing whitespace
 nnoremap <Leader>k :%s/\s\+$//<CR>
 
 " Easier copy/pasting to/from clipboard
+" Yanking
+nnoremap <Leader>Y "+Y
 vnoremap <Leader>y "+y
+
+" Deleting
+vnoremap <Leader>d "+d
+
+" Pasting
+nnoremap <Leader>P "+P
 nnoremap <Leader>p "+p
+vnoremap <Leader>p "+p
+vnoremap <Leader>P "+P
 
 " Open nerdtree
 nnoremap <Leader>f :NERDTree<CR>
