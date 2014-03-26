@@ -134,6 +134,10 @@ nnoremap <Leader>p "+p
 vnoremap <Leader>p "+p
 vnoremap <Leader>P "+P
 
+" Easy saving/quitting
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+
 " Open nerdtree
 nnoremap <Leader>f :NERDTree<CR>
 
