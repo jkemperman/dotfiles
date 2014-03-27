@@ -45,6 +45,6 @@ TEXT
 		"color" : ${if_match ${memperc}<90}"\#ffffff"${else}"\#ff0000"${endif}
 	},
 	{
-		"full_text" : "${time %Y-%m-%d %H:%m:%S}"
+		"full_text" : "${time %Y-%m-%d %H:%M:%S}"
 	}
 ],
