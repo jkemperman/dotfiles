@@ -40,6 +40,9 @@ if has('gui_running')
 	set guioptions-=L " Right scroll bar
 end
 
+" Add spaces when commenting with nerdcommenter
+let NERDSpaceDelims=1
+
 " Airline pimpin'
 let g:airline_theme="badwolf"
 let g:airline_powerline_fonts=0
