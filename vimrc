@@ -146,4 +146,5 @@ nnoremap <Leader>f :NERDTreeToggle<CR>
 
 " Pathogen
 execute pathogen#infect()
+execute pathogen#helptags()
 
