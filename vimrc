@@ -141,8 +141,8 @@ vnoremap <Leader>P "+P
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
-" Open nerdtree
-nnoremap <Leader>f :NERDTree<CR>
+" Open/close nerdtree
+nnoremap <Leader>f :NERDTreeToggle<CR>
 
 " Pathogen
 execute pathogen#infect()
