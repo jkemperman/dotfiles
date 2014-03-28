@@ -42,7 +42,7 @@ TEXT
 	},
 	{
 		"full_text" : "Disk ${fs_used /}/${fs_size /}",
-		"color" : ${if_match ${fs_used_perc}<80}"\#88bb88"${else}"\#bb8888"${endif}
+		"color" : ${if_match ${fs_used_perc}<75}"\#88bb88"${else}"\#bb8888"${endif}
 	},
 	{
 		"full_text" : "${time %Y-%m-%d %H:%M:%S}"
