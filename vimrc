@@ -7,6 +7,7 @@ execute pathogen#helptags()
 
 " Enable solarized colorscheme
 syntax enable
+set background=dark
 colorscheme solarized
 
 " Relative line numbering
