@@ -1,9 +1,13 @@
 " Enable vim awesomeness
 set nocompatible
+"
+" Pathogen
+execute pathogen#infect()
+execute pathogen#helptags()
 
-" Enable molokai colorscheme
-syntax on
-colorscheme molokai
+" Enable solarized colorscheme
+syntax enable
+colorscheme solarized
 
 " Relative line numbering
 set relativenumber
@@ -44,7 +48,7 @@ end
 let NERDSpaceDelims=1
 
 " Airline pimpin'
-let g:airline_theme="badwolf"
+let g:airline_theme="solarized"
 let g:airline_powerline_fonts=0
 let g:airline_left_sep=""
 let g:airline_left_alt_sep=""
@@ -144,7 +148,4 @@ nnoremap <Leader>q :q<CR>
 " Open/close nerdtree
 nnoremap <Leader>f :NERDTreeToggle<CR>
 
-" Pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
 
