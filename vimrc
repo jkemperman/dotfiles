@@ -10,8 +10,8 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-" Relative line numbering
-set relativenumber
+" Enable line numbering
+set number
 
 " Show column/line number information on the status bar
 set ruler
