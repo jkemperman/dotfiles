@@ -22,7 +22,7 @@ bindsym Print exec scrot -e 'mv $f ~/images/screenshots/'
 bindsym $mod+q kill
 
 # Start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -b -i -f -nb \#002b36 -nf \#839496 -sb \#b58900 -sf \#073642
+bindsym $mod+d exec --no-startup-id dmenu_run -b -i -f -nb \#002b36 -nf \#839496 -sb \#859900 -sf \#073642
 
 # Change focus
 bindsym $mod+h focus left
@@ -105,7 +105,7 @@ new_window pixel 2
 
 # Colors
 # Class                  border  backgr  text    indicator
-client.focused           #b58900 #b58900 #dddddd #cb4b16
+client.focused           #859900 #859900 #dddddd #cb4b16
 client.unfocused         #073642 #073642 #dddddd #6c71c4
 client.focused_inactive  #586e85 #586e85 #dddddd #6c71c4
 
@@ -119,7 +119,7 @@ bar
 		background #002b36
 
 		# Class             border  backgr  text
-		focused_workspace   #073642 #073642 #b58900
+		focused_workspace   #073642 #073642 #859900
 		active_workspace    #002b36 #002b36 #93a1a1
 		inactive_workspace  #002b36 #002b36 #586e75
 		urgent_workspace    #002b36 #002b36 #586e75
