@@ -13,7 +13,7 @@ focus_follows_mouse no
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # Lock the screen
-bindsym $mod_alt+Shift+l exec --no-startup-id i3lock -c 000000
+bindsym $mod_alt+Shift+l exec --no-startup-id i3lock -c 002b36
 
 # Take a screenshot
 bindsym Print exec scrot -e 'mv $f ~/images/screenshots/'
@@ -22,7 +22,7 @@ bindsym Print exec scrot -e 'mv $f ~/images/screenshots/'
 bindsym $mod+q kill
 
 # Start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -b -i -f -nb \#181818 -nf \#888888 -sb \#334333 -sf \#aabbaa
+bindsym $mod+d exec --no-startup-id dmenu_run -b -i -f -nb \#002b36 -nf \#839496 -sb \#b58900 -sf \#073642
 
 # Change focus
 bindsym $mod+h focus left
@@ -100,14 +100,14 @@ bindsym $mod_alt+space exec ncmpcpp toggle
 # Change font for i3bar
 font pango:Tamsyn 12
 
-# Remove title bar and set bordersize to 1 pixels
-new_window pixel 1
+# Remove title bar and set bordersize to 2 pixels
+new_window pixel 2
 
 # Colors
-# Class                  border  backgr  text
-client.focused           #889988 #889988 #dddddd
-client.unfocused         #343434 #343434 #dddddd
-client.focused_inactive  #455545 #455545 #dddddd
+# Class                  border  backgr  text    indicator
+client.focused           #b58900 #b58900 #dddddd #cb4b16
+client.unfocused         #073642 #073642 #dddddd #6c71c4
+client.focused_inactive  #586e85 #586e85 #dddddd #6c71c4
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -115,14 +115,14 @@ bar
 {
 	colors
 	{
-		statusline #ffffff
-		background #181818
+		statusline #93a1a1
+		background #002b36
 
 		# Class             border  backgr  text
-		focused_workspace   #181818 #181818 #aabbaa
-		active_workspace    #181818 #181818 #889988
-		inactive_workspace  #181818 #181818 #888888
-		urgent_workspace    #181818 #181818 #888888
+		focused_workspace   #073642 #073642 #b58900
+		active_workspace    #002b36 #002b36 #93a1a1
+		inactive_workspace  #002b36 #002b36 #586e75
+		urgent_workspace    #002b36 #002b36 #586e75
 	}
 
 	position top
