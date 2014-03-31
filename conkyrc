@@ -38,7 +38,7 @@ TEXT
 [
 	{
 		"full_text" : "RAM ${memperc}%" ,
-		"color" : ${if_match ${memperc}>75}"\#859900"${else}"\#cb4b16"${endif}
+		"color" : ${if_match ${memperc}<75}"\#859900"${else}"\#cb4b16"${endif}
 	},
 	{
 		"full_text" : "Disk ${fs_used /}/${fs_size /}",
