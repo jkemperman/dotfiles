@@ -3,3 +3,7 @@
 	email = kazooiej@gmail.com
 [color]
 	ui = true
+[alias]
+	aa = "add -A"
+	ca = "commit -a"
+	rh = "reset --hard"
