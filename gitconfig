@@ -4,11 +4,14 @@
 [color]
 	ui = true
 [alias]
+	co    = "checkout"
+	cob   = "checkout -b"
 	aa    = "add -A"
 	ca    = "commit -a"
 	p     = "push"
 	rh    = "reset --hard"
 	amend = "commit --amend"
+	ls = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
 [core]
 	whitespace = trailing-space,space-before-tab
 [diff]
