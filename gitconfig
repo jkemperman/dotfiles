@@ -4,6 +4,16 @@
 [color]
 	ui = true
 [alias]
-	aa = "add -A"
-	ca = "commit -a"
-	rh = "reset --hard"
+	aa    = "add -A"
+	ca    = "commit -a"
+	p     = "push"
+	rh    = "reset --hard"
+	amend = "commit --amend"
+[core]
+	whitespace = trailing-space,space-before-tab
+[diff]
+	renames = copies
+[branch]
+	autosetupmerge = true
+[push]
+	default = tracking
