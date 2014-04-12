@@ -148,5 +148,3 @@ nnoremap <Leader>q :q<CR>
 
 " Open/close nerdtree
 nnoremap <Leader>f :NERDTreeToggle<CR>
-
-
