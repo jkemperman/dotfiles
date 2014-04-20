@@ -8,6 +8,7 @@
 	co    = "checkout"
 	cob   = "checkout -b"
 	aa    = "add -A"
+	c     = "commit"
 	ca    = "commit -a"
 	pl    = "pull"
 	ps    = "push"
