@@ -124,6 +124,13 @@ noremap  <Right> <NOP>
 " Set mapleader to comma
 let mapleader=","
 
+" Create a new tab
+nnoremap <Leader>tt :tabnew<CR>
+
+" Switch between tabs
+nnoremap <Leader>tn :tabnext<CR>
+nnoremap <Leader>tp :tabprevious<CR>
+
 " Remove trailing whitespace
 nnoremap <Leader>k :%s/\s\+$//<CR>
 
