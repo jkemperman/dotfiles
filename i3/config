@@ -13,7 +13,7 @@ focus_follows_mouse no
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # Lock the screen
-bindsym $mod_alt+Shift+l exec --no-startup-id i3lock -c 002b36
+bindsym $mod+$mod_alt+l exec --no-startup-id i3lock -c 002b36
 
 # Take a screenshot
 bindsym Print exec scrot -e 'mv $f ~/images/screenshots/'
