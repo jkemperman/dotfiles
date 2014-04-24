@@ -124,7 +124,6 @@ noremap  <Right> <NOP>
 " Set mapleader to comma
 let mapleader=","
 
-
 " Remove trailing whitespace
 nnoremap <Leader>k :%s/\s\+$//<CR>
 
