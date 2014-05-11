@@ -1,9 +1,6 @@
 " Enable vim awesomeness
 set nocompatible
 
-" Automatically reload vimrc when it's saved
-au BufWritePost .vimrc so ~/.vimrc
-
 " Pathogen
 execute pathogen#infect()
 execute pathogen#helptags()
