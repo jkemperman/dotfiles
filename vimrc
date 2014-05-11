@@ -120,6 +120,14 @@ noremap  <Down>  <NOP>
 noremap  <Left>  <NOP>
 noremap  <Right> <NOP>
 
+" Automatically close braces, quotes, etc.
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap [ []<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+inoremap /* /**/<Esc>hi
+
 " Custom macros
 " Set mapleader to comma
 let mapleader=","
