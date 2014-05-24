@@ -9,4 +9,3 @@
 	(color-theme-initialize)
 	(add-to-list 'custom-theme-load-path "~/.emacs.d/lisp/themes/")
 	(load "~/.emacs.d/lisp/themes/solarized-theme.el")
-
