@@ -3,7 +3,6 @@ This is where I keep all my configuration files for my GNU/Linux environments.
 This repository contains dotfiles for the following applications.
 * git
 * vim
-* emacs
 * Zsh
 * Urxvt
 * i3
