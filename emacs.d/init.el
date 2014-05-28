@@ -1,3 +1,8 @@
+; Enable evil VI-emulation
+(add-to-list 'load-path "~/.emacs.d/evil")
+(require 'evil)
+(evil-mode 1)
+
 ; Change font for GUI
 (add-to-list 'default-frame-alist '(font . "Inconsolata-12"))
 
