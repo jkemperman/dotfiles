@@ -23,7 +23,10 @@
 (defun my-color-theme-solarized-dark ()
 	(interactive)
 	(color-theme-solarized-dark)
-	(set-face-attribute 'fringe nil :background "black")
-	(set-face-attribute 'linum nil :background "black"))
+	(set-face-attribute 'fringe nil :background "#073642")
+	(set-face-attribute 'linum nil :background "#073642"))
 
 (my-color-theme-solarized-dark)
+
+; Disable scrollbars for the GUI
+(scroll-bar-mode -1)
