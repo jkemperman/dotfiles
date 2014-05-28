@@ -99,6 +99,11 @@ bindsym $mod_alt+n exec ncmpcpp next
 bindsym $mod_alt+p exec ncmpcpp prev
 bindsym $mod_alt+space exec ncmpcpp toggle
 
+# Media keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 set Master 1dB+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 set Master 1dB-
+bindsym XF86AudioMute exec --no-startup-id amixer -c 0 set Master toggle
+
 ## Look and feel
 # Change font for i3bar
 font pango:Tamsyn 12
