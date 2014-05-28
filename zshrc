@@ -11,7 +11,7 @@ ZSH_THEME="miloshadzic"
 alias vi=vim
 alias top=htop
 alias feh="feh -. -B black"
-alias emacs="emacs -nw"
+alias emacs="TERM=xterm emacs -nw"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
