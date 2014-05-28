@@ -1,3 +1,7 @@
+(require 'linum)
+(global-linum-mode 1)
+(setq linum-format "%d ")
+
 ; Enable evil VI-emulation
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
@@ -12,4 +16,11 @@
 	'(progn
 		(color-theme-initialize)
 		(color-theme-hober)))
-(color-theme-solarized-dark)
+
+(defun my-color-theme-solarized-dark ()
+	(interactive)
+	(color-theme-solarized-dark)
+	(set-face-attribute 'fringe nil :background "#073642")
+	(set-face-attribute 'linum nil :background "#073642"))
+
+(my-color-theme-solarized-dark)
