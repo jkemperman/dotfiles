@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/color-theme")
+(add-to-list 'load-path "color-theme")
 (require 'color-theme)
 (eval-after-load "color-theme"
 	'(progn
