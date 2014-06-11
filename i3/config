@@ -12,8 +12,8 @@ focus_follows_mouse no
 # Start a terminal
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
-# Start ranger in a new terminal
-bindsym $mod+e exec --no-startup-id urxvt -e ranger
+# Start file manager
+bindsym $mod+e exec --no-startup-id thunar
 
 # Lock the screen
 bindsym $mod+$mod_alt+l exec --no-startup-id i3lock -c 002b36
