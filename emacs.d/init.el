@@ -28,5 +28,7 @@
 
 (my-color-theme-solarized-dark)
 
-; Disable scrollbars for the GUI
+; Disable GUI widgets
 (scroll-bar-mode -1)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
