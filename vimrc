@@ -36,7 +36,7 @@ if has('gui_running')
 	set mouse-=a
 
 	" Make the font a bit nicer
-	set guifont=inconsolata:h14
+	set guifont=inconsolata\ 12
 
 	" Remove gVim widgets
 	set guioptions-=m " Menu bar
