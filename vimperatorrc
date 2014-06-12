@@ -1,3 +1,4 @@
 noremap ; :
 noremap j 3j
 noremap k 3k
+colorscheme solarized
