@@ -6,6 +6,7 @@ This repository contains dotfiles for the following applications.
 * Zsh
 * Urxvt
 * i3
+    * dmenu-xft
 * conky
 * vimperator
 * luakit
@@ -13,4 +14,3 @@ This repository contains dotfiles for the following applications.
 ### Fonts
 You will need the following fonts installed on your system.
 * Inconsolata
-
