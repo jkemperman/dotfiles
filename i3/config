@@ -25,7 +25,7 @@ bindsym Print exec scrot -e 'mv $f ~/images/screenshots/'
 bindsym $mod+q kill
 
 # Start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -b -i -f -nb \#002b36 -nf \#839496 -sb \#859900 -sf \#073642
+bindsym $mod+d exec --no-startup-id dmenu_run -b -i -f -nb \#002b36 -nf \#839496 -sb \#859900 -sf \#073642 -fn inconsolata-10
 
 # Change focus
 bindsym $mod+h focus left
@@ -106,7 +106,7 @@ bindsym $mod_alt+Return exec --no-startup-id amixer -c 0 set Master toggle
 
 ## Look and feel
 # Change font for i3bar
-font pango:Tamsyn 12
+font pango:Inconsolata 12
 
 # Remove title bar and set bordersize to 2 pixels
 new_window pixel 2
