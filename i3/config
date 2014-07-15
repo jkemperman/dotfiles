@@ -100,9 +100,9 @@ bindsym $mod_alt+p exec ncmpcpp prev
 bindsym $mod_alt+space exec ncmpcpp toggle
 
 # Media keys
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 set Master 1dB+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 set Master 1dB-
-bindsym XF86AudioMute exec --no-startup-id amixer -c 0 set Master toggle
+bindsym $mod_alt+Right exec --no-startup-id amixer -c 0 set Master 1dB+
+bindsym $mod_alt+Left exec --no-startup-id amixer -c 0 set Master 1dB-
+bindsym $mod_alt+Return exec --no-startup-id amixer -c 0 set Master toggle
 
 ## Look and feel
 # Change font for i3bar
