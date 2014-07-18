@@ -13,7 +13,7 @@ focus_follows_mouse no
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # Start file manager
-bindsym $mod+e exec --no-startup-id thunar
+bindsym $mod+e exec --no-startup-id pcmanfm
 
 # Lock the screen
 bindsym $mod+$mod_alt+l exec --no-startup-id i3lock -c 002b36

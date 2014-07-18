@@ -7,6 +7,7 @@ This repository contains dotfiles for the following applications.
 * Urxvt
 * i3
     * dmenu-xft
+    * pcmanfm
 * conky
 * vimperator
 * luakit
