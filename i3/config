@@ -5,6 +5,7 @@ exec --no-startup-id compton --opengl --vsync opengl-swc --paint-on-overlay -b
 # Set alt as primary modifier and Mod4 als secondary modifier
 set $mod Mod1
 set $mod_alt Mod4
+floating_modifier $mod
 
 # Disable switching focus by moving the mouse around
 focus_follows_mouse no
