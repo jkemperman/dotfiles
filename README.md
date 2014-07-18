@@ -8,6 +8,7 @@ This repository contains dotfiles for the following applications.
 * i3
     * dmenu-xft
     * pcmanfm
+    * mpc
 * conky
 * vimperator
 * luakit

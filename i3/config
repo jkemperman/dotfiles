@@ -94,10 +94,10 @@ bindsym $mod+Shift+r restart
 # Exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec i3-msg exit
 
-# ncmpcpp hotkeys
-bindsym $mod_alt+n exec ncmpcpp next
-bindsym $mod_alt+p exec ncmpcpp prev
-bindsym $mod_alt+space exec ncmpcpp toggle
+# mpc hotkeys
+bindsym $mod_alt+Up exec mpc next
+bindsym $mod_alt+Down exec mpc prev
+bindsym $mod_alt+space exec mpc toggle
 
 # Media keys
 bindsym $mod_alt+Right exec --no-startup-id amixer -c 0 set Master 1dB+
