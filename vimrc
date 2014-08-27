@@ -32,17 +32,17 @@ set laststatus=2
 
 " gVim pimpin'
 if has('gui_running')
-	" Ignore mouse select
-	set mouse-=a
+    " Ignore mouse select
+    set mouse-=a
 
-	" Make the font a bit nicer
-	set guifont=inconsolata\ 12
+    " Make the font a bit nicer
+    set guifont=inconsolata\ 12
 
-	" Remove gVim widgets
-	set guioptions-=m " Menu bar
-	set guioptions-=T " Toolbar
-	set guioptions-=r " Left scroll bar
-	set guioptions-=L " Right scroll bar
+    " Remove gVim widgets
+    set guioptions-=m " Menu bar
+    set guioptions-=T " Toolbar
+    set guioptions-=r " Left scroll bar
+    set guioptions-=L " Right scroll bar
 end
 
 " Add spaces when commenting with nerdcommenter
@@ -75,6 +75,7 @@ set nobackup
 set noswapfile
 
 " Tabs and indenting
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
