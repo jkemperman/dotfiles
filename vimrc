@@ -48,6 +48,10 @@ if has('gui_running')
         set guifont=inconsolata:h12
     endif
 
+    " Change initial size
+    set lines=42
+    set columns=120
+
     " Remove gVim widgets
     set guioptions-=m " Menu bar
     set guioptions-=T " Toolbar
