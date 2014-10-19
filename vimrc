@@ -1,3 +1,6 @@
+" Explicitly specify encoding so Windows doesn't start crying
+set encoding=utf-8
+
 " Preparation for vundle
 set nocompatible
 filetype off
