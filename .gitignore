@@ -5,3 +5,7 @@
 *.orig
 *.netrwhist
 *.swp
+
+# Ignore all vim plugins, except for vundle
+vim/bundle/*
+!vim/bundle/Vundle.vim

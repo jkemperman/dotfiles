@@ -1,9 +1,12 @@
-" Enable vim awesomeness
+" Preparation for vundle
 set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
 
-" Pathogen
-execute pathogen#infect()
-execute pathogen#helptags()
+" Let vundle do it's thing
+call vundle#begin()
+source ~/.vim/plugins.vim
+call vundle#end()
 
 " Enable solarized colorscheme
 syntax enable
