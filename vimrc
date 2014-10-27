@@ -5,10 +5,11 @@ set encoding=utf-8
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
+let $PLUGINS='~/.vim/plugins.vim'
 
 " Let vundle do it's thing
 call vundle#begin()
-source ~/.vim/plugins.vim
+source $PLUGINS
 call vundle#end()
 
 " Enable solarized colorscheme

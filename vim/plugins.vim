@@ -1,3 +1,6 @@
+" Let Vundle manage itself
+Plugin 'gmarik/Vundle.vim'
+
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
 
@@ -24,3 +27,4 @@ Plugin 'tpope/vim-surround'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-haml'
 Plugin 'othree/html5.vim'
+Plugin 'glench/vim-jinja2-syntax'
