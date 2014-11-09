@@ -2,7 +2,7 @@
 URxvt.scrollBar: false
 
 ! Font
-URxvt.font: xft:Inconsolata:size=12
+URxvt.font: xft:Inconsolata:size=13
 
 ! Disable fading
 URxvt*fading: 20
