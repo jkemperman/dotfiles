@@ -32,7 +32,7 @@ set listchars=tab:»\ ,trail:·
 
 " Highlight characters past 79 columns
 highlight OverLength ctermbg=52 ctermfg=252
-match OverLength /\%79v.\+/
+match OverLength /\%80v.\+/
 
 " Always show statusbar
 set laststatus=2
@@ -103,9 +103,8 @@ set smartcase
 " Sane backspace behaviour
 set backspace=2
 
-" Linewrapping
-set textwidth=79
-set formatoptions+=t
+" Disable linewrapping
+set nowrap
 
 " Filetype specific
 filetype plugin indent on
