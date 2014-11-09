@@ -110,13 +110,13 @@ bindsym $mod_alt+Return exec --no-startup-id amixer -c 0 set Master toggle
 font pango:Inconsolata 12
 
 # Remove title bar and set bordersize to 2 pixels
-new_window pixel 2
+new_window pixel 1
 
 # Colors
 # Class                  border  backgr  text    indicator
-client.focused           #859900 #859900 #dddddd #cb4b16
-client.unfocused         #073642 #073642 #dddddd #6c71c4
-client.focused_inactive  #586e85 #586e85 #dddddd #6c71c4
+client.focused           #cb4b16 #cb4b16 #dddddd #073642
+client.unfocused         #073642 #073642 #dddddd #073642
+client.focused_inactive  #b58900 #b58900 #dddddd #073642
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -128,8 +128,8 @@ bar
 		background #002b36
 
 		# Class             border  backgr  text
-		focused_workspace   #073642 #073642 #859900
-		active_workspace    #002b36 #002b36 #93a1a1
+		focused_workspace   #073642 #073642 #cb4b16
+		active_workspace    #002b36 #002b36 #b58900
 		inactive_workspace  #002b36 #002b36 #586e75
 		urgent_workspace    #002b36 #002b36 #586e75
 	}
