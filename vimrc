@@ -46,7 +46,7 @@ if has('gui_running')
     if has('win32')
         set guifont=consolas:h14
     else
-        set guifont=inconsolata:h12
+        set guifont=inconsolata\ 13
     endif
 
     " Change initial size

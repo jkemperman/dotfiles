@@ -1,6 +1,6 @@
 # Run on startup
-exec --no-startup-id sh ~/.fehbg --bg-fill
 exec --no-startup-id compton --opengl --vsync opengl-swc --paint-on-overlay -b
+exec --no-startup-id sh ~/.fehbg --bg-fill
 
 # Set alt as primary modifier and Mod4 als secondary modifier
 set $mod Mod1
@@ -15,6 +15,10 @@ bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
 
 # Start file manager
 bindsym $mod+e exec --no-startup-id pcmanfm
+
+# Start the browser
+bindsym $mod+c exec --no-startup-id firefox
+bindsym $mod+Shift+c exec --no-startup-id firefox -private-window
 
 # Lock the screen
 bindsym $mod+$mod_alt+l exec --no-startup-id i3lock -c 002b36
@@ -88,8 +92,6 @@ bindsym $mod_alt+l resize grow width 3 px or 3 ppt
 bindsym $mod_alt+j resize shrink height 3 px or 3 ppt
 bindsym $mod_alt+k resize grow height 3 px or 3 ppt
 
-# Reload the configuration file
-bindsym $mod+Shift+c reload
 # Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # Exit i3 (logs you out of your X session)
