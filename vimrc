@@ -1,11 +1,14 @@
 " Explicitly specify encoding so Windows doesn't start crying
 set encoding=utf-8
 
+" Hacky way to get the .vim/.nvim folder location
+let $MYVIM=split($MYVIMRC, 'rc')[0]
+
 " Preparation for vundle
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-let $PLUGINS='~/.vim/plugins.vim'
+set rtp+=$MYVIM/bundle/Vundle.vim
+let $PLUGINS=$MYVIM . '/plugins.vim'
 
 " Let vundle do it's thing
 call vundle#begin()
