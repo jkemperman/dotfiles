@@ -70,6 +70,10 @@ export EDITOR=/usr/bin/vim
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Virtualenvwrapper
-export WORKON_HOME=~/virtualenv
-source /usr/bin/virtualenvwrapper.sh
+# Virtualenvwrapper (if installed)
+if [ -e /usr/bin/virtualenvwrapper.sh ]
+then
+    export WORKON_HOME=~/virtualenv
+    source /usr/bin/virtualenvwrapper.sh
+fi
+
