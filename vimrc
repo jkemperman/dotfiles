@@ -4,6 +4,12 @@ set encoding=utf-8
 " Hacky way to get the .vim/.nvim folder location
 let $MYVIM=split($MYVIMRC, 'rc')[0]
 
+" Get Vundle if not present
+if !isdirectory($MYVIM . "/bundle/Vundle.vim/.git")
+    echo "Installing Vundle..."
+    !git clone https://github.com/gmarik/Vundle.vim $MYVIM/bundle/Vundle.vim
+endif
+
 " Preparation for vundle
 set nocompatible
 filetype off

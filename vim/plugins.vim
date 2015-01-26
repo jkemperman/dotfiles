@@ -6,6 +6,8 @@ Plugin 'tpope/vim-fugitive'
 
 " Color schemes
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'endel/vim-github-colorscheme'
+Plugin 'jnurmine/Zenburn'
 
 " Better statusbar
 Plugin 'bling/vim-airline'
