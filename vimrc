@@ -83,6 +83,9 @@ let g:airline_branch_prefix=""
 let g:airline_readonly_symbol=""
 let g:airline_linecolumn_prefix=""
 
+" Disable folding with markdown files
+let g:vim_markdown_folding_disabled=1
+
 " Eliminate delays on ESC
 set ttimeoutlen=10
 
