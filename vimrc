@@ -16,7 +16,7 @@ filetype off
 set rtp+=$MYVIM/bundle/Vundle.vim
 let $PLUGINS=$MYVIM . '/plugins.vim'
 
-" Let vundle do it's thing
+" Let vundle do its thing
 call vundle#begin()
 source $PLUGINS
 call vundle#end()
