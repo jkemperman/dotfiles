@@ -1,7 +1,7 @@
 BoldAsFont=no
 Scrollbar=none
-Columns=100
-Rows=32
+Columns=120
+Rows=38
 Font=Inconsolata
 FontHeight=14
 FontSmoothing=full
