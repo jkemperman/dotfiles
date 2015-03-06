@@ -63,16 +63,16 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # Switch to workspace
-bindsym $mod+1 workspace I
-bindsym $mod+2 workspace II
-bindsym $mod+3 workspace III
-bindsym $mod+4 workspace IV
-bindsym $mod+5 workspace V
-bindsym $mod+6 workspace VI
-bindsym $mod+7 workspace VII
-bindsym $mod+8 workspace VIII
-bindsym $mod+9 workspace IX
-bindsym $mod+0 workspace X
+bindsym $mod+1 workspace 1:I
+bindsym $mod+2 workspace 2:II
+bindsym $mod+3 workspace 3:III
+bindsym $mod+4 workspace 4:IV
+bindsym $mod+5 workspace 5:V
+bindsym $mod+6 workspace 6:VI
+bindsym $mod+7 workspace 7:VII
+bindsym $mod+8 workspace 8:VIII
+bindsym $mod+9 workspace 9:IX
+bindsym $mod+0 workspace 10:X
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace I
@@ -137,5 +137,6 @@ bar
 	}
 
 	position top
-	status_command $HOME/bin/conky-i3bar.sh
+	status_command i3status
+    strip_workspace_numbers yes
 }
