@@ -73,15 +73,19 @@ end
 let NERDSpaceDelims=1
 
 " Airline pimpin'
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+end
+
 let g:airline_theme="solarized"
 let g:airline_powerline_fonts=0
 let g:airline_left_sep=""
 let g:airline_left_alt_sep=""
 let g:airline_right_sep=""
 let g:airline_right_alt_sep=""
-let g:airline_branch_prefix=""
-let g:airline_readonly_symbol=""
-let g:airline_linecolumn_prefix=""
+let g:airline_symbols.branch=""
+let g:airline_symbols.readonly=""
+let g:airline_symbols.linecolumn=""
 
 " Disable folding with markdown files
 let g:vim_markdown_folding_disabled=1
