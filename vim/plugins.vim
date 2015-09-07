@@ -25,6 +25,10 @@ Plugin 'scrooloose/syntastic'
 " Surround text with html/other
 Plugin 'tpope/vim-surround'
 
+" Snippets!
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 " Extra/improved language support
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-haml'

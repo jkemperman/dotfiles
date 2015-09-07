@@ -90,6 +90,10 @@ let g:airline_symbols.linecolumn=""
 " Disable folding with markdown files
 let g:vim_markdown_folding_disabled=1
 
+" Snippet config
+let g:UltiSnipsExpandTrigger="<tab>"
+
+
 " Eliminate delays on ESC
 set ttimeoutlen=10
 
