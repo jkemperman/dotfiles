@@ -133,6 +133,10 @@ filetype plugin indent on
 " Avoid the extra keypress when going to command mode
 map ; :
 
+" Disable scroll wheel
+map <ScrollWheelUp> <nop>
+map <ScrollWheelDown> <nop>
+
 " Easier window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
