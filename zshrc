@@ -9,6 +9,7 @@ ZSH_THEME="miloshadzic"
 
 # Aliases
 alias vi=vim
+alias g=git
 alias vim="mvim -v"
 alias top=htop
 alias feh="feh -. -B black"
