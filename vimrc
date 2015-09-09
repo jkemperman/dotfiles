@@ -176,3 +176,6 @@ nnoremap <Leader>q :q<CR>
 
 " Open/close nerdtree
 nnoremap <Leader>f :NERDTreeToggle<CR>
+
+" Clear search highlight by pressing enter a 2nd time
+nnoremap <CR> :noh<CR><CR>
