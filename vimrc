@@ -39,10 +39,6 @@ set cursorline
 set list
 set listchars=tab:»\ ,trail:·
 
-" Highlight characters past 79 columns
-highlight OverLength ctermbg=52 ctermfg=252
-match OverLength /\%80v.\+/
-
 " Always show statusbar
 set laststatus=2
 
