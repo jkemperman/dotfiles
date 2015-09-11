@@ -174,8 +174,14 @@ vnoremap <Leader>P "+P
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
-" Open/close nerdtree
-nnoremap <Leader>f :NERDTreeToggle<CR>
+" New splits
+nnoremap <Leader>sh :split<CR>
+nnoremap <Leader>sv :vsplit<CR>
+
+" NERDTree bindings
+nnoremap <Leader>fg :NERDTreeFocus<CR>
+nnoremap <Leader>fq :NERDTreeClose<CR>
+nnoremap <Leader>ff :NERDTreeFind<CR>
 
 " Clear search highlight by pressing enter a 2nd time
 nnoremap <CR> :noh<CR><CR>
