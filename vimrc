@@ -183,5 +183,17 @@ nnoremap <Leader>fg :NERDTreeFocus<CR>
 nnoremap <Leader>fq :NERDTreeClose<CR>
 nnoremap <Leader>ff :NERDTreeFind<CR>
 
+" Fugitive git bindings
+nnoremap <Leader>gst :Gstatus<CR>
+nnoremap <Leader>gsh :Gsplit<CR>
+nnoremap <Leader>gsv :Gvsplit<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gu :Gbrowse<CR>
+nnoremap <Leader>gb :Gblame<CR>
+vnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gpl :Gpull<CR>
+nnoremap <Leader>gps :Gpush<CR>
+
 " Clear search highlight by pressing enter a 2nd time
 nnoremap <CR> :noh<CR><CR>
