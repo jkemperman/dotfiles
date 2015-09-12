@@ -10,8 +10,6 @@ ZSH_THEME="miloshadzic"
 # Aliases
 alias vi=vim
 alias g=git
-alias vim="mvim -v"
-alias top=htop
 alias feh="feh -. -B black"
 alias emacs="TERM=xterm emacs -nw"
 
@@ -23,12 +21,22 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export EDITOR=/usr/bin/vim
 
 # Enable RVM if installed
 if [ -e ~/.rvm/scripts/rvm ]
 then
     source ~/.rvm/scripts/rvm
+fi
+
+## Vim!
+# ...but prefer macvim on OSX
+if [ -e "$(which mvim)" ]
+then
+    alias vim="mvim -v"
+    export EDITOR="$(which mvim) -v"
+elif [ -e "$(which vim)" ]
+then
+    export EDITOR="$(which vim)"
 fi
 
 # Virtualenvwrapper (if installed)
@@ -37,6 +45,4 @@ then
     export WORKON_HOME=~/virtualenv
     source /usr/bin/virtualenvwrapper.sh
 fi
-
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
