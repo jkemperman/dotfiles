@@ -22,16 +22,16 @@ echo "...done"
 
 # Backup existing dotfiles, then create symlinks
 for file in $files; do
-	# Check if there's an existing dotfile
-	if [ -e ~/.$file ]
-	then
-		# Backup existing dotfile
-		echo "Backing up $file from ~ to $olddir"
-		mv ~/.$file $olddir
-	fi
-	# Create symlink to dotfile
-	echo "Creating symlink to $file in ~"
-	ln -s $dir/$file ~/.$file
+    # Check if there's an existing dotfile
+    if [ -e ~/.$file ]
+    then
+        # Backup existing dotfile
+        echo "Backing up $file from ~ to $olddir"
+        mv ~/.$file $olddir
+    fi
+    # Create symlink to dotfile
+    echo "Creating symlink to $file in ~"
+    ln -s $dir/$file ~/.$file
 done
 
 echo "...done"
