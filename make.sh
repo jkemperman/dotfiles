@@ -34,4 +34,10 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
+if [[ $config == *"zshrc"* ]]
+then
+    mkdir $dir/zsh
+    exec git clone https://github.com/olivierverdier/zsh-git-prompt $dir/zsh/git-prompt
+fi
+
 echo "...done"

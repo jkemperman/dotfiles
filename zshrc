@@ -1,3 +1,7 @@
+# Plugins
+source ~/dotfiles/zsh/git-prompt/zshrc.sh
+PROMPT=$'%F{cyan}%n%f@%F{red}%m%f %b$(git_super_status)\n%F{blue}%~%f %# '
+
 # Aliases
 alias ls="ls -Gp"
 alias l="ls -l"
@@ -32,5 +36,3 @@ then
     source /usr/bin/virtualenvwrapper.sh
 fi
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-PROMPT=$'%F{cyan}%n%f@%F{red}%m%f\n%F{blue}%~%f %# '
