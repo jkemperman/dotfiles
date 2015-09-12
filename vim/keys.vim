@@ -1,0 +1,73 @@
+" Set mapleader to comma
+let mapleader=","
+
+" Avoid the extra keypress when going to command mode
+map ; :
+
+" Disable scroll wheel
+map <ScrollWheelUp> <nop>
+map <ScrollWheelDown> <nop>
+
+" Easier window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Easier indenting
+vnoremap < <gv
+vnoremap > >gv
+nnoremap < <<
+nnoremap > >>
+
+" Create a new tab
+nnoremap <Leader>tt :tabnew<CR>
+
+" Switch between tabs
+nnoremap <Leader>tn :tabnext<CR>
+nnoremap <Leader>tp :tabprevious<CR>
+
+" Remove trailing whitespace
+nnoremap <Leader>k :%s/\s\+$//<CR>
+
+" Easier copy/pasting to/from clipboard
+" Yanking
+nnoremap <Leader>Y "+Y
+vnoremap <Leader>y "+y
+
+" Deleting
+vnoremap <Leader>d "+d
+
+" Pasting
+nnoremap <Leader>P "+P
+nnoremap <Leader>p "+p
+vnoremap <Leader>p "+p
+vnoremap <Leader>P "+P
+
+" Easy saving/quitting
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+
+" New splits
+nnoremap <Leader>sh :split<CR>
+nnoremap <Leader>sv :vsplit<CR>
+
+" NERDTree bindings
+nnoremap <Leader>fg :NERDTreeFocus<CR>
+nnoremap <Leader>fq :NERDTreeClose<CR>
+nnoremap <Leader>ff :NERDTreeFind<CR>
+
+" Fugitive git bindings
+nnoremap <Leader>gst :Gstatus<CR>
+nnoremap <Leader>gsh :Gsplit<CR>
+nnoremap <Leader>gsv :Gvsplit<CR>
+nnoremap <Leader>gd :Gdiff<CR>
+nnoremap <Leader>gc :Gcommit<CR>
+nnoremap <Leader>gu :Gbrowse<CR>
+nnoremap <Leader>gb :Gblame<CR>
+vnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gpl :Gpull<CR>
+nnoremap <Leader>gps :Gpush<CR>
+
+" Clear search highlight by pressing enter a 2nd time
+nnoremap <CR> :noh<CR><CR>
