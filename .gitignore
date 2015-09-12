@@ -8,3 +8,6 @@
 
 # Ignore all vim plugins, except for vundle
 vim/bundle/*
+
+# Ignore all zsh "plugins"
+zsh/*
