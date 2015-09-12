@@ -33,4 +33,4 @@ then
 fi
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-PROMPT=$'%n@%m\n%~ %# '
+PROMPT=$'%F{cyan}%n%f@%F{red}%m%f\n%F{blue}%~%f %# '
