@@ -1,9 +1,9 @@
 BoldAsFont=no
 Scrollbar=none
-Columns=120
-Rows=38
+Columns=150
+Rows=54
 Font=Inconsolata
-FontHeight=14
+FontHeight=12
 FontSmoothing=full
 Locale=en_US
 Charset=UTF-8
