@@ -34,7 +34,8 @@ for file in $files; do
     ln -s $dir/$file ~/.$file
 done
 
-if [[ $config == *"zshrc"* ]]
+# Install git-prompt for zsh if installing zsh.
+if [[ $files == *"zshrc"* ]]
 then
     mkdir $dir/zsh
     exec git clone https://github.com/olivierverdier/zsh-git-prompt $dir/zsh/git-prompt
