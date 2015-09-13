@@ -49,14 +49,14 @@ if has('gui_running')
 
     " Make the font a bit nicer
     if has('win32')
-        set guifont=consolas:h14
+        set guifont=consolas:h12
     else
-        set guifont=inconsolata\ 13
+        set guifont=inconsolata\ 12
     endif
 
     " Change initial size
-    set lines=42
-    set columns=120
+    set lines=54
+    set columns=140
 
     " Remove gVim widgets
     set guioptions-=m " Menu bar
