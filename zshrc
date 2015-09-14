@@ -2,11 +2,13 @@
 source ~/dotfiles/zsh/git-prompt/zshrc.sh
 PROMPT=$'%F{cyan}%n%f@%F{red}%m%f %b$(git_super_status)\n%F{blue}%~%f %# '
 
+# General config
 setopt autocd
 
 # Aliases
 alias ls="ls -Gp"
 alias l="ls -l"
+alias la="ls -la"
 alias vi=vim
 alias g=git
 alias feh="feh -. -B black"
