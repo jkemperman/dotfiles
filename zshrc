@@ -36,3 +36,9 @@ then
     source /usr/bin/virtualenvwrapper.sh
 fi
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Use the haskell implementation if available
+if [ -e ~/dotfiles/zsh/git-prompt/dist/build/gitstatus/gitstatus ]
+then
+    export GIT_PROMPT_EXECUTABLE="haskell"
+fi
