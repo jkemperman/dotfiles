@@ -1,4 +1,5 @@
 *.exe
 *.dll
 *.DS_Store
+*.orig
 tags
