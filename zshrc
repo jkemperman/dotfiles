@@ -5,6 +5,9 @@ PROMPT=$'%F{cyan}%n%f@%F{red}%m%f %b$(git_super_status)\n%F{blue}%~%f %# '
 # General config
 setopt autocd
 bindkey -e
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
+autoload -Uz compinit
+compinit
 
 # Aliases
 alias ls="ls -Gp"
