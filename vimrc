@@ -86,6 +86,8 @@ let g:airline_symbols.linecolumn=""
 " Disable folding with markdown files
 let g:vim_markdown_folding_disabled=1
 
+" Slightly increase NERDTree window size
+let g:NERDTreeWinSize=45
 
 " Eliminate delays on ESC
 set ttimeoutlen=10
