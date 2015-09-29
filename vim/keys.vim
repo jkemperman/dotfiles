@@ -48,9 +48,9 @@ vnoremap <Leader>P "+P
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
-" New splits
-nnoremap <Leader>sh :split<CR>
-nnoremap <Leader>sv :vsplit<CR>
+" New splits (in reverse order because it is more intuitive)
+nnoremap <Leader>sv :split<CR>
+nnoremap <Leader>sh :vsplit<CR>
 
 " NERDTree bindings
 nnoremap <Leader>fg :NERDTreeFocus<CR>
