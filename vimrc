@@ -44,9 +44,6 @@ set laststatus=2
 
 " gVim pimpin'
 if has('gui_running')
-    " Ignore mouse select
-    set mouse-=a
-
     " Make the font a bit nicer
     if has('win32')
         set guifont=consolas:h12
@@ -88,6 +85,10 @@ let g:vim_markdown_folding_disabled=1
 
 " Slightly increase NERDTree window size
 let g:NERDTreeWinSize=45
+
+" Remember lvimrc decisions and ignore sandbox
+let g:localvimrc_persistent=2
+let g:localvimrc_sandbox=0
 
 " Eliminate delays on ESC
 set ttimeoutlen=10

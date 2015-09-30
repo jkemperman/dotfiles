@@ -1,6 +1,9 @@
 " Let Vundle manage itself
 Plugin 'gmarik/Vundle.vim'
 
+" Local vimrc
+Plugin 'embear/vim-localvimrc'
+
 " Git wrapper
 Plugin 'tpope/vim-fugitive'
 
