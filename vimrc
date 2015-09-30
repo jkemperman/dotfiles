@@ -42,6 +42,9 @@ set listchars=tab:»\ ,trail:·
 " Always show statusbar
 set laststatus=2
 
+" Allow the use of the mouse
+set mouse=a
+
 " gVim pimpin'
 if has('gui_running')
     " Make the font a bit nicer
