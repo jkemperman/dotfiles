@@ -50,3 +50,6 @@ if [ -e ~/dotfiles/zsh/git-prompt/dist/build/gitstatus/gitstatus ]
 then
     export GIT_PROMPT_EXECUTABLE="haskell"
 fi
+
+# Add custom scripts to path
+export PATH=~/dotfiles/bin/zsh:$PATH
