@@ -10,9 +10,9 @@ autoload -Uz compinit
 compinit
 
 # Aliases
-alias ls="ls -Gp"
+alias ls="ls -Gph --color"
 alias l="ls -l"
-alias la="ls -la"
+alias la="ls -lA"
 alias vi=vim
 alias g=git
 alias feh="feh -. -B black"
@@ -49,4 +49,9 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 if [ -e ~/dotfiles/zsh/git-prompt/dist/build/gitstatus/gitstatus ]
 then
     export GIT_PROMPT_EXECUTABLE="haskell"
+fi
+
+if [ -e "~/dotfiles/zsh/local.zsh" ]
+then
+    source -e "~/dotfiles/zsh/local.zsh"
 fi
