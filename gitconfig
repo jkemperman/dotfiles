@@ -18,6 +18,8 @@
 [core]
 	whitespace = trailing-space,space-before-tab
 	excludesfile = /Users/joep.kemperman/.gitignore_global
+[merge]
+    tool = vimdiff
 [diff]
 	renames = copies
 [branch]

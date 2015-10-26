@@ -83,6 +83,11 @@ let g:airline_symbols.branch=""
 let g:airline_symbols.readonly=""
 let g:airline_symbols.linecolumn=""
 
+" Show tabline
+" let g:airline#extensions#tabline#enabled=1
+" let g:airline#extensions#tabline#show_tabs=0
+" let g:airline#extensions#tabline#show_buffers=0
+
 " Disable folding with markdown files
 let g:vim_markdown_folding_disabled=1
 
@@ -92,6 +97,9 @@ let g:NERDTreeWinSize=45
 " Remember lvimrc decisions and ignore sandbox
 let g:localvimrc_persistent=2
 let g:localvimrc_sandbox=0
+
+" Increase Control-P max result count
+let g:ctrlp_match_window='max:16,results:16'
 
 " Eliminate delays on ESC
 set ttimeoutlen=10
