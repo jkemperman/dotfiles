@@ -2,5 +2,8 @@
 *.dll
 *.DS_Store
 *.orig
-tags
 .lvimrc
+
+# Ignore tags file, but allow folders by that name.
+tags
+!tags/
