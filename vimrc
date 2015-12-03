@@ -50,6 +50,8 @@ if has('gui_running')
     " Make the font a bit nicer
     if has('win32')
         set guifont=consolas:h12
+    elseif has('gui_macvim')
+        set guifont=monaco:h10
     else
         set guifont=inconsolata\ 12
     endif
