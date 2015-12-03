@@ -32,6 +32,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
+" Cross-editor compatible editor config.
+Plugin 'editorconfig/editorconfig-vim'
+
 " Extra/improved language support
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-haml'

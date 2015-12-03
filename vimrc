@@ -64,6 +64,9 @@ if has('gui_running')
     set guioptions-=L " Right scroll bar
 end
 
+" Play nicely with fugitive
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
 " Add spaces when commenting with nerdcommenter
 let NERDSpaceDelims=1
 
