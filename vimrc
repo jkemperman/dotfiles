@@ -27,13 +27,10 @@ set background=dark
 colorscheme solarized
 
 " Enable line numbering
-set number
+set relativenumber
 
 " Show column/line number information on the status bar
 set ruler
-
-" Highlight current line
-set cursorline
 
 " Make whitespace visible
 set list
@@ -94,7 +91,7 @@ let g:airline_symbols.linecolumn=""
 let g:vim_markdown_folding_disabled=1
 
 " Slightly increase NERDTree window size
-let g:NERDTreeWinSize=45
+let g:NERDTreeWinSize=40
 
 " Remember lvimrc decisions and ignore sandbox
 let g:localvimrc_persistent=2
