@@ -10,7 +10,7 @@ autoload -Uz compinit
 compinit
 
 # Aliases
-alias ls="ls -Gph --color"
+alias ls="ls -Gph"
 alias l="ls -l"
 alias la="ls -lA"
 alias vi=vim
