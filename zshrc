@@ -18,7 +18,7 @@ alias g=git
 alias feh="feh -. -B black"
 alias emacs="TERM=xterm emacs -nw"
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=.local_bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Enable RVM if installed
 if [ -e ~/.rvm/scripts/rvm ]
