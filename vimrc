@@ -46,11 +46,11 @@ set mouse-=a
 if has('gui_running')
     " Make the font a bit nicer
     if has('win32')
-        set guifont=consolas:h12
+        set guifont=consolas:h10
     elseif has('gui_macvim')
         set guifont=monaco:h10
     else
-        set guifont=inconsolata\ 12
+        set guifont=inconsolata\ 10
     endif
 
     " Change initial size
