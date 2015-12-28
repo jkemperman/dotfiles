@@ -3,7 +3,7 @@
 *.DS_Store
 *.orig
 .lvimrc
-.local_bin/
+.local_bin
 
 # Ignore tags file, but allow folders by that name.
 tags
