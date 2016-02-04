@@ -14,6 +14,7 @@ Plugin 'jnurmine/Zenburn'
 
 " Better statusbar
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " File explorer
 Plugin 'scrooloose/nerdtree'
