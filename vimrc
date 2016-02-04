@@ -2,7 +2,11 @@
 set encoding=utf-8
 
 " Hacky way to get the .vim/.nvim folder location
-let $MYVIM=split($MYVIMRC, 'rc')[0]
+if has("nvim")
+    let $MYVIM=split($MYVIMRC, "/init.vim")[0]
+else
+    let $MYVIM=split($MYVIMRC, "rc")[0]
+end
 
 " Get Vundle if not present
 if !isdirectory($MYVIM . "/bundle/Vundle.vim/.git")
