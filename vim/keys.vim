@@ -9,10 +9,16 @@ map <ScrollWheelUp> <nop>
 map <ScrollWheelDown> <nop>
 
 " Easier window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+" iterm2 on OS X incorrectly sets the backspace key description to <C-h>. Use
+" <BS> instead as a workaround for nvim.
+if has('nvim')
+    nmap <BS> <C-w>h
+else
+    nmap <C-h> <C-w>h
+endif
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 " Easier indenting
 vnoremap < <gv
