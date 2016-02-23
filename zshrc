@@ -54,7 +54,7 @@ fi
 # Add custom scripts to path
 export PATH=~/dotfiles/bin/zsh:$PATH
 
-if [ -e "~/dotfiles/zsh/local.zsh" ]
+if [ -e ~/dotfiles/zsh/local.zsh ]
 then
-    source -e "~/dotfiles/zsh/local.zsh"
+    source ~/dotfiles/zsh/local.zsh
 fi
