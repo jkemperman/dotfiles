@@ -14,7 +14,7 @@
 	ps    = "push"
 	rh    = "reset --hard"
 	amend = "commit --amend"
-	ls = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+    ls = log --pretty=format:"%C(green)%ad\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short
 [core]
 	whitespace = trailing-space,space-before-tab
 	excludesfile = /Users/joep.kemperman/.gitignore_global
