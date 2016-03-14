@@ -29,6 +29,9 @@ Plugin 'scrooloose/syntastic'
 " Surround text with html/other
 Plugin 'tpope/vim-surround'
 
+" Deal with word variants
+Plugin 'tpope/vim-abolish'
+
 " Snippets!
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
