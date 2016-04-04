@@ -49,3 +49,9 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim'
+
+" Neovim only
+if has('nvim')
+    " Terminal action!
+    Plugin 'kassio/neoterm'
+end
