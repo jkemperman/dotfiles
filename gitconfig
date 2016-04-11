@@ -1,28 +1,31 @@
 [user]
-	name = Joep Kemperman
-	email = mail@joepkemperman.nl
+    name = Joep Kemperman
+    email = mail@joepkemperman.nl
 [color]
-	ui = true
+    ui = true
 [alias]
-	s     = "status"
-	co    = "checkout"
-	cob   = "checkout -b"
-	aa    = "add -A"
-	c     = "commit"
-	ca    = "commit -a"
-	pl    = "pull"
-	ps    = "push"
-	rh    = "reset --hard"
-	amend = "commit --amend"
+    s     = "status"
+    co    = "checkout"
+    cob   = "checkout -b"
+    aa    = "add -A"
+    c     = "commit"
+    ca    = "commit -a"
+    pl    = "pull"
+    ps    = "push"
+    rh    = "reset --hard"
+    amend = "commit --amend"
     ls = log --pretty=format:"%C(green)%ad\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short
 [core]
-	whitespace = trailing-space,space-before-tab
-	excludesfile = /Users/joep.kemperman/.gitignore_global
-[merge]
-    tool = vimdiff
+    whitespace = trailing-space,space-before-tab
+    excludesfile = ~/.gitignore_global
 [diff]
-	renames = copies
+    tool = nvimdiff
+    renames = copies
+[difftool]
+    prompt = true
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
 [branch]
-	autosetupmerge = true
+    autosetupmerge = true
 [push]
-	default = tracking
+    default = tracking
