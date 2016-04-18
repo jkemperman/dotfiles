@@ -1,6 +1,9 @@
 [user]
     name = Joep Kemperman
     email = mail@joepkemperman.nl
+    signingkey = 52D33C74
+[url "git@github.com:"]
+    insteadOf = https://github.com/
 [color]
     ui = true
 [alias]
@@ -17,7 +20,7 @@
     ls = log --pretty=format:"%C(green)%ad\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short
 [core]
     whitespace = trailing-space,space-before-tab
-    excludesfile = ~/.gitignore_global
+    excludesfile = /Users/joep.kemperman/.gitignore_global
 [diff]
     tool = nvimdiff
     renames = copies
