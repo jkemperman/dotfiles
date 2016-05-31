@@ -8,3 +8,6 @@
 # Ignore tags file, but allow folders by that name.
 tags
 !tags/
+
+# Ruby stuff
+.byebug_history
