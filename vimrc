@@ -129,6 +129,9 @@ set shiftwidth=4
 set softtabstop=4
 set autoindent
 
+" Vertically center the cursor
+set scrolloff=999
+
 " Make search case insensitive if search pattern is all lowercase
 set ignorecase
 set smartcase
