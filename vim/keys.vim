@@ -77,3 +77,6 @@ nnoremap <Leader>gps :Gpush<CR>
 
 " Clear search highlight by pressing enter a 2nd time
 nnoremap <CR> :noh<CR><CR>
+
+" To hell with Ex mode!
+nnoremap Q <nop>
