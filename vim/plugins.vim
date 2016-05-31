@@ -36,6 +36,8 @@ Plugin 'tpope/vim-abolish'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
+Plugin 'vim-scripts/loremipsum'
+
 " Cross-editor compatible editor config.
 Plugin 'editorconfig/editorconfig-vim'
 
