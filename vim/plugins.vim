@@ -51,6 +51,9 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim'
+Plugin 'nikvdp/ejs-syntax'
+Plugin 'heartsentwined/vim-emblem'
+Plugin 'dsawardekar/ember.vim'
 
 " Neovim only
 if has('nvim')
