@@ -31,7 +31,7 @@ set background=dark
 colorscheme solarized
 
 " Enable line numbering
-set number
+set relativenumber
 
 " Show column/line number information on the status bar
 set ruler
