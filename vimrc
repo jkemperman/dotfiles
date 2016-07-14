@@ -97,6 +97,8 @@ let g:airline_symbols.linecolumn=""
 " let g:airline#extensions#tabline#show_tabs=0
 " let g:airline#extensions#tabline#show_buffers=0
 
+let g:neoterm_shell = "zsh"
+
 " Disable folding with markdown files
 let g:vim_markdown_folding_disabled=1
 
