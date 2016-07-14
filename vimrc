@@ -46,6 +46,9 @@ set laststatus=2
 " Disallow the use of the mouse
 set mouse-=a
 
+" Match do/end, if/end etc. with the `%` key
+runtime macros/matchit.vim
+
 " gVim pimpin'
 if has('gui_running')
     " Make the font a bit nicer
