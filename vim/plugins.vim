@@ -23,14 +23,17 @@ Plugin 'kien/ctrlp.vim'
 " Easy commenting
 Plugin 'scrooloose/nerdcommenter'
 
-" Show syntax errors
-Plugin 'scrooloose/syntastic'
+" Async build tool for linting/compilation on save
+Plugin 'neomake/neomake'
 
 " Surround text with html/other
 Plugin 'tpope/vim-surround'
 
 " Deal with word variants
 Plugin 'tpope/vim-abolish'
+
+" Alignment yo
+Plugin 'godlygeek/tabular'
 
 " Snippets!
 Plugin 'SirVer/ultisnips'
