@@ -18,6 +18,7 @@ endif
 set nocompatible
 filetype off
 set rtp+=$MYVIM/bundle/Vundle.vim
+set rtp+=~/.fzf
 let $PLUGINS=$MYVIM . '/plugins.vim'
 
 " Let vundle do its thing
@@ -71,6 +72,9 @@ if has('gui_running')
     set guioptions-=L " Right scroll bar
 end
 
+" Link/build code on write
+autocmd! BufWritePost * Neomake
+
 " Play nicely with fugitive
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
@@ -99,9 +103,6 @@ let g:airline_symbols.linecolumn=""
 
 let g:neoterm_shell = "zsh"
 
-" Disable folding with markdown files
-let g:vim_markdown_folding_disabled=1
-
 " Slightly increase NERDTree window size
 let g:NERDTreeWinSize=40
 
@@ -109,11 +110,11 @@ let g:NERDTreeWinSize=40
 let g:localvimrc_persistent=2
 let g:localvimrc_sandbox=0
 
-" Increase Control-P max result count
-let g:ctrlp_match_window='max:16,results:16'
-
 " Eliminate delays on ESC
 set ttimeoutlen=10
+
+" Disable folding, increasing performance
+set nofoldenable
 
 " Highlight search terms
 set hlsearch

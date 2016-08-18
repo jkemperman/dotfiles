@@ -18,7 +18,7 @@ Plugin 'vim-airline/vim-airline-themes'
 
 " File explorer
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+Plugin 'junegunn/fzf.vim'
 
 " Easy commenting
 Plugin 'scrooloose/nerdcommenter'

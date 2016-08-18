@@ -20,6 +20,8 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
+noremap <C-P> :FZF<CR>
+
 " Easier indenting
 vnoremap < <gv
 vnoremap > >gv
