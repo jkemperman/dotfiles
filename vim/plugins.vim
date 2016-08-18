@@ -1,65 +1,65 @@
 " Let Vundle manage itself
-Plugin 'gmarik/Vundle.vim'
+Plug 'gmarik/Vundle.vim'
 
 " Local vimrc
-Plugin 'embear/vim-localvimrc'
+Plug 'embear/vim-localvimrc'
 
 " Git wrapper
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " Color schemes
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'endel/vim-github-colorscheme'
-Plugin 'jnurmine/Zenburn'
+Plug 'altercation/vim-colors-solarized'
+Plug 'endel/vim-github-colorscheme'
+Plug 'jnurmine/Zenburn'
 
 " Better statusbar
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " File explorer
-Plugin 'scrooloose/nerdtree'
-Plugin 'junegunn/fzf.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf.vim'
 
 " Easy commenting
-Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 
 " Async build tool for linting/compilation on save
-Plugin 'neomake/neomake'
+Plug 'neomake/neomake'
 
 " Surround text with html/other
-Plugin 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 " Deal with word variants
-Plugin 'tpope/vim-abolish'
+Plug 'tpope/vim-abolish'
 
 " Alignment yo
-Plugin 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 
 " Snippets!
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
-Plugin 'vim-scripts/loremipsum'
+Plug 'vim-scripts/loremipsum'
 
 " Cross-editor compatible editor config.
-Plugin 'editorconfig/editorconfig-vim'
+Plug 'editorconfig/editorconfig-vim'
 
 " Extra/improved language support
-Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-haml'
-Plugin 'othree/html5.vim'
-Plugin 'glench/vim-jinja2-syntax'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
-Plugin 'slim-template/vim-slim'
-Plugin 'nikvdp/ejs-syntax'
-Plugin 'heartsentwined/vim-emblem'
-Plugin 'dsawardekar/ember.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'tpope/vim-haml'
+Plug 'othree/html5.vim'
+Plug 'glench/vim-jinja2-syntax'
+Plug 'kchmck/vim-coffee-script'
+Plug 'plasticboy/vim-markdown'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'slim-template/vim-slim'
+Plug 'nikvdp/ejs-syntax'
+Plug 'heartsentwined/vim-emblem'
+Plug 'dsawardekar/ember.vim'
 
 " Neovim only
 if has('nvim')
     " Terminal action!
-    Plugin 'kassio/neoterm'
+    Plug 'kassio/neoterm'
 end

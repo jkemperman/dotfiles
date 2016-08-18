@@ -8,23 +8,18 @@ else
     let $MYVIM=split($MYVIMRC, "rc")[0]
 end
 
-" Get Vundle if not present
-if !isdirectory($MYVIM . "/bundle/Vundle.vim/.git")
-    echo "Installing Vundle..."
-    !git clone https://github.com/gmarik/Vundle.vim $MYVIM/bundle/Vundle.vim
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-" Preparation for vundle
-set nocompatible
-filetype off
-set rtp+=$MYVIM/bundle/Vundle.vim
-set rtp+=~/.fzf
-let $PLUGINS=$MYVIM . '/plugins.vim'
-
-" Let vundle do its thing
-call vundle#begin()
+let $PLUGINS='~/.vim/plugins.vim'
+call plug#begin('~/.vim/plugged')
 source $PLUGINS
-call vundle#end()
+call plug#end()
+
+set rtp+=~/.fzf
 
 " Enable solarized colorscheme
 syntax enable
