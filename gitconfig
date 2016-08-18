@@ -7,25 +7,33 @@
 [color]
     ui = true
 [alias]
-    s     = "status"
-    co    = "checkout"
-    cob   = "checkout -b"
-    aa    = "add -A"
-    c     = "commit"
-    ca    = "commit -a"
-    pl    = "pull"
-    ps    = "push"
-    rh    = "reset --hard"
-    amend = "commit --amend"
-    ls = log --pretty=format:"%C(green)%ad\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short
+    s     = status
+    co    = checkout
+    cob   = checkout -b
+    aa    = add -A
+    c     = commit
+    ca    = commit -a
+    pm    = pull
+    ps    = push
+    rh    = reset --hard
+    amend = commit --amend
+    ls    = log --pretty=format:"%C(green)%ad\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short
+    pr    = pull --rebase
+    ready = rebase -i @{u}
 [core]
     whitespace = trailing-space,space-before-tab
     excludesfile = /Users/joep.kemperman/.gitignore_global
+[merge]
+    tool = nvimdiff
+[mergetool]
+    prompt = true
+[mergetool "nvimdiff"]
+  cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[difftool]
+    prompt = true
 [diff]
     tool = nvimdiff
     renames = copies
-[difftool]
-    prompt = true
 [difftool "nvimdiff"]
     cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
 [branch]
