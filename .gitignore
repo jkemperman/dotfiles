@@ -5,6 +5,4 @@
 *.orig
 *.netrwhist
 *.swp
-
-# Ignore all zsh "plugins"
-zsh/*
+zsh_plugins/
