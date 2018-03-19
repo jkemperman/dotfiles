@@ -143,6 +143,14 @@ set backspace=2
 " Disable linewrapping
 set nowrap
 
+" Asynchronously run tests
+let test#strategy = "neoterm"
+
+call neomake#configure#automake('rw', 1000)
+
+" Lower contrast whitespace characters
+hi NonText ctermfg=black
+
 " Filetype specific
 filetype plugin indent on
 
