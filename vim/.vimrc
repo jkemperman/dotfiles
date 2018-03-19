@@ -154,4 +154,8 @@ hi NonText ctermfg=black
 " Filetype specific
 filetype plugin indent on
 
+" Searching using :vim[grep]
+set wildignore+=*/node_modules/*
+set wildignore+=*/.git/*
+
 source $MYVIM/keys.vim
