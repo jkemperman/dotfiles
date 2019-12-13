@@ -7,24 +7,42 @@
 [color]
     ui = true
 [alias]
-    s     = status
-    d     = diff
-    ds    = diff --staged
-    co    = checkout
-    cob   = checkout -b
-    aa    = add -A
-    c     = commit
-    ca    = commit -a
-    pm    = pull
-    ps    = push
-    rh    = reset --hard
-    amend = commit --amend
-    ls    = log --pretty=format:"%C(green)%ad\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short
-    pr    = pull --rebase
-    ready = rebase -i @{u}
+    b        = branch
+    s        = status
+    st       = stash
+    d        = diff
+    ds       = diff --staged
+    dst      = diff --stat
+    dsts     = diff --stat --staged
+    co       = checkout
+    cob      = checkout -b
+    aa       = add -A
+    rmc      = rm --cached
+    c        = commit
+    ca       = commit -a
+    pm       = pull
+    ps       = push
+    psfwl    = push --force-with-lease
+    psu      = "!git push --set-upstream origin \"$(git symbolic-ref --short HEAD)\""
+    psufwl   = "!git push --set-upstream origin \"$(git symbolic-ref --short HEAD)\" --force-with-lease"
+    rh       = reset --hard
+    amend    = commit --amend
+    smerge   = merge --squash
+    rb       = rebase
+    rbc      = rebase --continue
+    rbs      = rebase --skip
+    rba      = rebase --abort
+    ls       = log --pretty=format:"%C(green)%ad\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short
+    pr       = pull --rebase
+    subdate  = submodule update --recursive
+    ready    = rebase -i @{u}
+    ignore   = update-index --assume-unchanged
+    unignore = update-index --no-assume-unchanged
+    ignored  = !git ls-files -v | grep "^[[:lower:]]"
 [core]
-    whitespace = trailing-space,space-before-tab
-    excludesfile = /Users/joep.kemperman/.gitignore_global
+    whitespace = blank-at-eol,blank-at-eof,trailing-space,space-before-tab,tab-in-indent
+    excludesfile = ~/.gitignore_global
+    attributesfile = ~/.gitattributes
 [merge]
     tool = nvimdiff
 [mergetool]
@@ -42,3 +60,5 @@
     autosetupmerge = true
 [push]
     default = tracking
+[status]
+    submoduleSummary = true

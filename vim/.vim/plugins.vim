@@ -6,25 +6,20 @@ Plug 'embear/vim-localvimrc'
 
 " Git wrapper
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " Color schemes
 Plug 'altercation/vim-colors-solarized'
 Plug 'endel/vim-github-colorscheme'
 Plug 'jnurmine/Zenburn'
 
-" Better statusbar
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
 " File explorer
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " Easy commenting
 Plug 'scrooloose/nerdcommenter'
-
-" Async build tool for linting/compilation on save
-Plug 'neomake/neomake'
 
 " Surround text with html/other
 Plug 'tpope/vim-surround'
@@ -34,6 +29,9 @@ Plug 'tpope/vim-abolish'
 
 " Alignment yo
 Plug 'godlygeek/tabular'
+
+" Test runner
+Plug 'janko-m/vim-test'
 
 " Snippets!
 Plug 'SirVer/ultisnips'
@@ -52,14 +50,29 @@ Plug 'glench/vim-jinja2-syntax'
 Plug 'kchmck/vim-coffee-script'
 Plug 'plasticboy/vim-markdown'
 Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
 Plug 'slim-template/vim-slim'
 Plug 'nikvdp/ejs-syntax'
 Plug 'heartsentwined/vim-emblem'
+Plug 'keith/rspec.vim'
 Plug 'dsawardekar/ember.vim'
+Plug 'JulesWang/css.vim'
+Plug 'fatih/vim-go'
+Plug 'AndrewRadev/vim-eco'
+Plug 'junegunn/vim-easy-align'
+Plug 'mxw/vim-jsx'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
+Plug 'prettier/vim-prettier'
+Plug 'dense-analysis/ale'
+
+" Clojure stuff
+Plug 'bhurlow/vim-parinfer'
+Plug 'tpope/vim-fireplace'
+Plug 'kien/rainbow_parentheses.vim'
 
 " Neovim only
 if has('nvim')
     " Terminal action!
     Plug 'kassio/neoterm'
+    Plug 'neomake/neomake'
 end

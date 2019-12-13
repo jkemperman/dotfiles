@@ -9,18 +9,13 @@ map <ScrollWheelUp> <nop>
 map <ScrollWheelDown> <nop>
 
 " Easier window navigation
-" iterm2 on OS X incorrectly sets the backspace key description to <C-h>. Use
-" <BS> instead as a workaround for nvim.
-if has('nvim')
-    nmap <BS> <C-w>h
-else
-    nmap <C-h> <C-w>h
-endif
+nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-noremap <C-P> :FZF<CR>
+noremap <C-P> :Files<CR>
+noremap <C-O> :GFiles<CR>
 
 " Easier indenting
 vnoremap < <gv
@@ -73,12 +68,37 @@ nnoremap <Leader>gd :Gdiff<CR>
 nnoremap <Leader>gc :Gcommit<CR>
 nnoremap <Leader>gu :Gbrowse<CR>
 nnoremap <Leader>gb :Gblame<CR>
-vnoremap <Leader>gb :Gblame<CR>
 nnoremap <Leader>gpl :Gpull<CR>
 nnoremap <Leader>gps :Gpush<CR>
+
+" Count search occurences
+nnoremap <Leader>/ :%s///gn<CR>
+
+" Indent selected xml
+vnoremap <Leader>x :! xmllint --format -<CR>
+
+" Run tests
+nmap <Leader>rc :TestNearest<CR>
+nmap <Leader>rf :TestFile<CR>
+nmap <Leader>rl :TestLast<CR>
+nmap <Leader>rt :RunTests<CR>
+
+" Run ale autofixers
+nmap <Leader>af :ALEFix<CR>
 
 " Clear search highlight by pressing enter a 2nd time
 nnoremap <CR> :noh<CR><CR>
 
 " To hell with Ex mode!
 nnoremap Q <nop>
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+if has("nvim")
+    " Escape terminal mode with escape
+    tnoremap <Esc> <C-\><C-n>
+end

@@ -2,6 +2,7 @@
 *.dll
 *.DS_Store
 *.orig
+*@neomake_*
 .lvimrc
 .local_bin
 
@@ -11,3 +12,10 @@ tags
 
 # Ruby stuff
 .byebug_history
+.pry_history
+.ruby-version
+.ruby-gemset
+
+node_modules/
+
+.graphqlconfig
