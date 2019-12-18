@@ -162,7 +162,9 @@ let g:ale_fixers = {
             \'javascript': ['eslint', 'stylelint']
             \}
 
-call neomake#configure#automake('rw', 1000)
+if has("nvim")
+    call neomake#configure#automake('rw', 1000)
+end
 
 " Lower contrast whitespace characters
 hi NonText ctermfg=black
