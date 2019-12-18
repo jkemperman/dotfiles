@@ -6,3 +6,5 @@
 *.netrwhist
 *.swp
 zsh_plugins/
+zsh/local.zsh
+zsh/local/*.zsh

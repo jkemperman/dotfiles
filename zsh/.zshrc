@@ -58,3 +58,5 @@ if [ -e ~/dotfiles/zsh/local.zsh ]
 then
     source ~/dotfiles/zsh/local.zsh
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
