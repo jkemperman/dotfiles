@@ -59,4 +59,7 @@ then
     source ~/dotfiles/zsh/local.zsh
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+if [ -f ~/.fzf.zsh ]; then
+    source ~/.fzf.zsh
+    export FZF_DEFAULT_COMMAND='ag --nocolor --ignore node_modules -g ""'
+fi
