@@ -34,6 +34,7 @@
     rba      = rebase --abort
     ls       = log --pretty=format:"%C(green)%ad\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short
     pr       = pull --rebase
+    gca      = gc --aggressive
     subdate  = submodule update --recursive
     ready    = rebase -i @{u}
     ignore   = update-index --assume-unchanged
