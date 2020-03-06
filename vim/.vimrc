@@ -141,6 +141,7 @@ set autoindent
 " Vertically center the cursor
 set scrolloff=999
 
+
 " Make search case insensitive if search pattern is all lowercase
 set ignorecase
 set smartcase
@@ -165,6 +166,23 @@ let g:ale_fixers = {
 if has("nvim")
     call neomake#configure#automake('rw', 1000)
 end
+
+let g:rbpt_colorpairs = [
+            \['brown',       'RoyalBlue3'],
+            \['Darkblue',    'SeaGreen3'],
+            \['darkgray',    'DarkOrchid3'],
+            \['darkgreen',   'firebrick3'],
+            \['darkcyan',    'RoyalBlue3'],
+            \['darkred',     'SeaGreen3'],
+            \['darkmagenta', 'DarkOrchid3'],
+            \['brown',       'firebrick3'],
+            \['darkmagenta', 'DarkOrchid3'],
+            \['Darkblue',    'firebrick3'],
+            \['darkgreen',   'RoyalBlue3'],
+            \['darkcyan',    'SeaGreen3'],
+            \['darkred',     'DarkOrchid3'],
+            \['red',         'firebrick3'],
+            \]
 
 " Lower contrast whitespace characters
 hi NonText ctermfg=black
