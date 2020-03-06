@@ -46,7 +46,7 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Use the haskell implementation if available
-if [ -e ~/dotfiles/zsh_plugins/git-prompt/dist/build/gitstatus/gitstatus ]
+if [ -e ~/dotfiles/zsh_plugins/git-prompt/src/.bin/gitstatus ]
 then
     export GIT_PROMPT_EXECUTABLE="haskell"
 fi
