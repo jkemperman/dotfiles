@@ -8,6 +8,7 @@
     ui = true
 [alias]
     b        = branch
+    bl       = branch --list
     s        = status
     st       = stash
     d        = diff
