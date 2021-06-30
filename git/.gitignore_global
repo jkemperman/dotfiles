@@ -19,3 +19,5 @@ tags
 node_modules/
 
 .graphqlconfig
+
+.vscode/
