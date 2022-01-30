@@ -1,0 +1,1 @@
+Invoke-WebRequest -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim | New-Item $HOME/.vim/autoload/plug.vim -Force

@@ -9,10 +9,20 @@ else
     let $MYVIM=split($MYVIMRC, "rc")[0]
 end
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
+if has('win32')
+    " This only works with Windows developer mode turned on, and doesn't work with PowerShell
+    " We'll still change to PowerShell later on, as it's more powerful
+    call system('mklink /d "%USERPROFILE%/vimfiles" "%USERPROFILE%/.vim"')
+    set shell=powershell
+end
+
+if has('win32') && empty(glob('~/.vim/autoload/plug.vim'))
+    !. $HOME/dotfiles/vim/.vim/vim-plug-install.ps1
+    autocmd VimEnter * PlugInstall | source $MYVIMRC
+elseif empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
 let $PLUGINS='~/.vim/plugins.vim'
@@ -54,9 +64,12 @@ function! OnGuiEnter()
     let g:gui_running = 1
     source $MYVIM/plugged/vim-colors-solarized/colors/solarized.vim
 
+    " Increase inital window size
+    set lines=64 columns=172
+
     " Make the font a bit nicer
     if has('win32')
-        set guifont=consolas:h10
+        set guifont=Cascadia_Code:h10:cANSI:qDRAFT
     elseif has('unix')
         let s:uname = system('echo -n $(uname -s)')
         echo s:uname
