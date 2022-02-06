@@ -1,5 +1,7 @@
 " Explicitly specify encoding so Windows doesn't start crying
 set encoding=utf-8
+set langmenu=en_US.UTF-8
+language messages en_US.UTF-8
 let g:gui_running = 0
 
 " Hacky way to get the .vim/.nvim folder location
@@ -13,7 +15,6 @@ if has('win32')
     " This only works with Windows developer mode turned on, and doesn't work with PowerShell
     " We'll still change to PowerShell later on, as it's more powerful
     call system('mklink /d "%USERPROFILE%/vimfiles" "%USERPROFILE%/.vim"')
-    set shell=powershell
 end
 
 if has('win32') && empty(glob('~/.vim/autoload/plug.vim'))
