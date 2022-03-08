@@ -21,3 +21,8 @@ node_modules/
 .graphqlconfig
 
 .vscode/
+
+**/*_BACKUP_*
+**/*_BASE_*
+**/*_LOCAL_*
+**/*_REMOTE_*

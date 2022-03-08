@@ -27,7 +27,8 @@
     psu      = "!git push --set-upstream origin \"$(git symbolic-ref --short HEAD)\""
     psufwl   = "!git push --set-upstream origin \"$(git symbolic-ref --short HEAD)\" --force-with-lease"
     rh       = reset --hard
-    amend    = commit --amend
+    amend    = commit --amend --no-edit
+    amende   = commit --amend
     smerge   = merge --squash
     rb       = rebase
     rbc      = rebase --continue
