@@ -47,18 +47,18 @@
     excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
 [merge]
-    tool = nvimdiff
+    tool = vimdiff
 [mergetool]
     prompt = true
-[mergetool "nvimdiff"]
-  cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[mergetool "vimdiff"]
+  cmd = vim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
 [difftool]
     prompt = true
 [diff]
-    tool = nvimdiff
+    tool = vimdiff
     renames = copies
-[difftool "nvimdiff"]
-    cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[difftool "vimdiff"]
+    cmd = "vim -d \"$LOCAL\" \"$REMOTE\""
 [branch]
     autosetupmerge = true
 [push]
