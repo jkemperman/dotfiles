@@ -1,6 +1,3 @@
-" Let Vundle manage itself
-Plug 'gmarik/Vundle.vim'
-
 " Local vimrc
 Plug 'embear/vim-localvimrc'
 
