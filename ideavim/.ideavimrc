@@ -1,0 +1,32 @@
+" Set mapleader to comma
+let mapleader=","
+
+" Yank/paste to/from system clipboard
+set clipboard+=unnamed
+
+" Disables audible bell
+set visualbell
+
+" Avoid the extra keypress when going to command mode
+map ; :
+
+" Easier indenting
+vnoremap < <gv
+vnoremap > >gv
+nnoremap < <<
+nnoremap > >>
+
+" New splits (in reverse order because it is more intuitive)
+nnoremap <Leader>sv :split<CR>
+nnoremap <Leader>sh :vsplit<CR>
+
+" Create a new tab
+nnoremap <Leader>tt :tabnew<CR>
+
+" Switch between tabs
+nnoremap <Leader>tn :tabnext<CR>
+nnoremap <Leader>tp :tabprevious<CR>
+
+" Easy saving/quitting
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
