@@ -1,7 +1,6 @@
 [user]
     name = Joep Kemperman
     email = mail@joepkemperman.nl
-    signingkey = 52D33C74
 [url "git@github.com:"]
     insteadOf = https://github.com/
 [color]
@@ -15,17 +14,15 @@
     ds       = diff --staged
     dst      = diff --stat
     dsts     = diff --stat --staged
-    co       = checkout
-    cob      = checkout -b
+    sw       = switch
+    swc      = switch -c
     aa       = add -A
-    rmc      = rm --cached
     c        = commit
     ca       = commit -a
     pm       = pull
+    pr       = pull --rebase
     ps       = push
     psfwl    = push --force-with-lease
-    psu      = "!git push --set-upstream origin \"$(git symbolic-ref --short HEAD)\""
-    psufwl   = "!git push --set-upstream origin \"$(git symbolic-ref --short HEAD)\" --force-with-lease"
     rh       = reset --hard
     amend    = commit --amend --no-edit
     amende   = commit --amend
@@ -35,33 +32,13 @@
     rbs      = rebase --skip
     rba      = rebase --abort
     ls       = log --pretty=format:"%C(green)%ad\\ %C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short
-    pr       = pull --rebase
-    gca      = gc --aggressive
     subdate  = submodule update --recursive
-    ready    = rebase -i @{u}
-    ignore   = update-index --assume-unchanged
-    unignore = update-index --no-assume-unchanged
-    ignored  = !git ls-files -v | grep "^[[:lower:]]"
 [core]
     whitespace = blank-at-eol,blank-at-eof,trailing-space,space-before-tab,tab-in-indent
     excludesfile = ~/.gitignore_global
     attributesfile = ~/.gitattributes
-[merge]
-    tool = vimdiff
-[mergetool]
-    prompt = true
-[mergetool "vimdiff"]
-  cmd = vim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
-[difftool]
-    prompt = true
-[diff]
-    tool = vimdiff
-    renames = copies
-[difftool "vimdiff"]
-    cmd = "vim -d \"$LOCAL\" \"$REMOTE\""
-[branch]
-    autosetupmerge = true
 [push]
-    default = tracking
+    default = upstream
+    autoSetupRemote = true
 [status]
     submoduleSummary = true
